@@ -1,0 +1,283 @@
+canvas {
+    border-radius: 15px;
+}
+
+.supportContact {
+    width: 12%;
+}
+
+.locationReservation {
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 1325px) {
+    .webgl {
+        width: 640px;
+        height: 480px;
+    }
+}
+
+.canvasContainer {
+    position: relative;
+    display: grid;
+}
+
+.topDescription {
+    position: absolute;
+    font-weight: 600;
+    font-size: 20px;
+    top: 15px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+    border: 1px;
+    color: black;
+    right: 2%;
+}
+
+.bottomDescription {
+    position: absolute;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+    bottom: 2%;
+    border: 1px;
+    color: black;
+    left: 2%;
+}
+
+@media screen and (max-width: 820px) {
+    .canvasDescription {
+        visibility: hidden;
+    }
+}
+
+.containerImageAndReservation {
+    display: flex;
+    margin: auto;
+    margin-top: 134px;
+    width: 90%;
+}
+
+.containerImageDetailLocation {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 70%;
+}
+
+.firstImage {
+    border-radius: 15px;
+    width: 90%;
+    height: 100%;
+}
+
+.secondImage {
+    border-radius: 0px 15px 0px 0px;
+    width: 100%;
+    height: calc(50% - 10xp);
+}
+
+.thirdImage {
+    border-radius: 0px 0px 15px 0px;
+    width: 100%;
+    height: calc(50% - 10xp);
+}
+
+.containerReservation {
+    box-shadow: var(--box-shadow);
+    padding: 40px 35px;
+    border-radius: 15px;
+    width: 30%;
+    height: auto;
+}
+
+.reservationHr {
+    margin: 20px 0px;
+    border: none;
+    border-top: 1px #989898 solid;
+    width: 100%;
+}
+
+.marginReserveButton {
+    margin-top: 30px;
+}
+
+.containerCostReservation {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.costReservation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentCostReservation {
+    display: flex;
+}
+
+.containerDateLocationDetails {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    width: 200px;
+}
+
+.dateSelectContainer {
+    margin: 15px auto 0px auto;
+}
+
+.locationSelectContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    color: black;
+    box-shadow: var(--box-shadow);
+}
+
+.containerdetails {
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+    box-shadow: var(--box-shadow);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.listEquipment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+    width: 60%;
+    row-gap: 15px;
+}
+
+.oneEquipment {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    width: 50%;
+}
+
+.reviewsNameAndDate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dateReviews {
+    color: var(--text-color);
+}
+
+.grayTextLocation {
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+.rulesHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.interiorSecurityLocation {
+    display: flex;
+    gap: 60px;
+    margin-left: 20%;
+}
+
+.conditionLocation {
+    margin: 25px 0px 0px 20% ;
+}
+
+.bottomLocation {
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1280px) {
+    .containerImageAndReservation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .firstImage {
+        border-radius: 15px 15px 0px 0px;
+        width: 100%;
+        height: 50%;
+    }
+
+    .secondImage {
+        border-radius: 0px 0px 0px 15px;
+        width: calc(50% - 10px);
+        height: 50%;
+    }
+
+    .thirdImage {
+        border-radius: 0px 0px 15px 0px;
+        width: (50% - 10px);
+        height: 50%;
+    }
+
+    .containerImageDetailLocation {
+        display: flex;
+        flex-direction: column;
+
+        margin: auto;
+        align-items: center;
+    }
+
+    .containerMoreImage {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+        gap: 20px;
+    }
+
+    .containerReservation {
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .rulesHeader {
+        margin-bottom: 20px;
+    }
+
+    .listEquipment {
+        width: 90%;
+    }
+
+    .responsiveDetailsLocation {
+        width: 100vw;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .containerImageAndReservation {
+        align-items: center;
+    }
+
+    .containerReservation {
+        width: 90%;
+    }
+
+    .oneEquipment p{
+        font-size: 12px;
+    }
+
+    .containerdetails {
+        padding: 25px 10px;
+    }
+}
+

@@ -1,0 +1,673 @@
+.iconRealityCreateApart{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+#preview {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+ }
+
+  #image-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    background-color: #c4c4c4;
+    margin: 10px auto 20px auto;
+    display: flex;
+    height: 30%;
+    width: 80%;
+    justify-content: center;
+    border-style: dashed;
+    border-color: #989898;
+    border-width: 5px;
+    background-repeat: no-repeat;
+    max-height: 300px;
+    min-width: 80%;
+    min-height: 180px;
+  }
+  
+.imageCreateLocation{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 70vw;
+    height: 70vw;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+#file-input{
+    margin-top: 20px;
+    overflow: hidden;
+    display: none;
+}
+
+.buttonInput-FileCreateApart{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.buttonInput-File{
+    background-color: var(--primary-color);
+    width: 20px;
+    height: 50px;
+    padding: 8px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.containerAddPicture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonInput-File:hover{
+    background-color:#CCAD00;
+    cursor: pointer;
+}
+
+#textAddPicture{
+    text-align: center;
+    color: var(--text-color);
+}
+
+.formCreateApart{
+    display: flex;
+    flex-direction: column;
+    /* top: 0px; */
+    /* text-align: center; */
+}
+
+.iconPlusCreateApart{
+    margin-top: 30px;
+}
+
+
+.inputTypeOfAccommodation{
+    width: 330px;
+    height: 31px;
+    margin-top: 20px;
+    border: none;
+    box-shadow: var(--box-shadow);
+    padding-left: 10px;
+    border-radius: 8px;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+.inputCapacity{
+    width: 330px;
+    height: 31px;
+    margin-top: 20px;
+    border: none;
+    box-shadow: var(--box-shadow);
+    padding-left: 10px;
+    border-radius: 8px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+.descriptionCreateApart{
+    width: 330px;
+    height: 73px;
+    margin-top: 20px;
+    border: none;
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+.equipementCreateApart{
+    /* position: relative;
+    left: 12%; */
+    margin: auto;
+    box-shadow: var(--box-shadow);
+    width: 330px;
+    height: auto;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+#textEquipement{
+    font-size: small;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.equipementList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-left: 10px;
+    background-color: pink;
+    width: 50%;
+    height: 100px;
+}
+
+/* .listEquipement{
+    display: flex;
+    align-items: center;
+    width: 45%;
+    margin: auto;
+} */
+
+/* .kitchenPicture{
+    height: 13px;
+    width: 18px;
+}
+
+.textKitchen{
+    font-size: small;
+    margin-top: 4px;
+}
+
+.cameraPicture{
+    height: 13px;
+    width: 18px;
+
+}
+
+.textCamera{
+    font-size: small;
+}
+
+.workspace_smokeAlarm{
+    margin-top: 7px;
+}
+
+.workspacePicture{
+    height: 13px;
+    width: 18px;
+    
+}
+
+.textWorkspace{
+    font-size: small;
+}
+
+.smokeAlarmPicture{
+    height: 13px;
+    width: 18px;
+    
+}
+
+.textSmokeAlarm{
+    font-size: small;
+}
+
+.wifi_firstKit{
+    margin-top: 7px;
+}
+
+
+.wifiPicture{
+    height: 13px;
+    width: 18px;
+    
+}
+
+.textWifi{
+    font-size: small;
+}
+
+
+.firstKitPicture{
+    height: 13px;
+    width: 18px;
+    
+}
+
+.textFirstKit{
+    font-size: small;
+}
+
+.dryer_privateParking{
+    margin-top: 7px;
+}
+
+
+.dryerPicture{
+    height: 13px;
+    width: 18px;
+    
+}
+
+.textDryer{
+    font-size: small;
+}
+
+
+.privateParkingPicture{
+    height: 13px;
+    width: 18px;
+    
+}
+
+.textPrivateParking{
+    font-size: small;
+}
+
+.climateControl_heating{
+    margin-top: 7px;
+}
+
+
+.climateControlPicture{
+    height: 13px;
+    width: 18px;
+    
+}
+
+.textClimateControl{
+    font-size: small;
+}
+
+
+.heatingPicture{
+    height: 13px;
+    width: 18px;
+    
+}
+
+.textHeating{
+    font-size: small;
+}
+
+.interior{
+    text-align: center;
+} */
+
+.inputInterior{
+    width: 330px;
+    height: 31px;
+    margin-top: 20px;
+    border: none;
+    box-shadow: var(--box-shadow);
+    padding-left: 10px;
+    border-radius: 8px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.inputSecurity{
+    width: 330px;
+    height: 31px;
+    margin-top: 20px;
+    border: none;
+    box-shadow: var(--box-shadow);
+    padding-left: 10px;
+    border-radius: 8px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.cancellationCondition{
+    text-align: center;
+}
+
+.cancellationConditionCreateApart{
+    width: 330px;
+    height: 73px;
+    margin-top: 15px;
+    border: none;
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.buttonSaveCreateApart{
+    text-align: center;
+    margin-top: 13px;
+}
+
+.buttonSave{
+    background-color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    border: none;
+    border-radius: 5px;
+    width: 198px;
+    height: 32px;
+    cursor: pointer;
+    margin: auto;
+}
+
+@media screen and (orientation:landscape) {
+
+    .iconRealityCreateApart{
+        width: 50px;
+        height: 50px;
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    
+    #image-container {
+        position: relative;
+        width: auto;
+        height: auto;
+        border-radius: 15px;
+        background-color: #c4c4c4;
+        margin: 10px auto 20px auto;
+        display: flex;
+        height: 30%;
+        width: 60%;
+        justify-content: center;
+        border-style: dashed;
+        border-color: #989898;
+        border-width: 5px;
+        background-repeat: no-repeat;
+        max-height: 300px;
+        min-width: 80%;
+        min-height: 180px;
+      }
+
+      .imageCreateLocation{
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+        width: 30vw;
+        height: 30vw;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin: auto;
+    }
+
+    .buttonInput-FileCreateApart{
+        text-align: right;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .inputTypeOfAccommodation{
+    width: 500px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    box-shadow: var(--box-shadow);
+    padding-left: 10px;
+    border-radius: 8px;
+    justify-content: center;
+    margin-bottom: 20px;
+    }
+
+    .inputCapacity{
+        width: 500px;
+        height: 50px;
+        margin-top: 20px;
+        border: none;
+        box-shadow: var(--box-shadow);
+        padding-left: 10px;
+        border-radius: 8px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    
+    .descriptionCreateApart{
+        width: 500px;
+        height: 170px;
+        margin-top: 20px;
+        border: none;
+        box-shadow: var(--box-shadow);
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin: auto;
+    }
+    
+    
+    .equipementCreateApart{
+        /* position: relative;
+        left: 12%; */
+        box-shadow: var(--box-shadow);
+        width: 500px;
+        height: auto;
+        border-radius: 15px;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    
+    #textEquipement{
+        font-size: small;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    
+    .equipementList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-left: 10px;
+    }
+    
+    .listEquipement{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 2px;
+        width: 45%;
+        
+    }
+    
+    .kitchenPicture{
+        height: 13px;
+        width: 18px;
+    }
+    
+    .textKitchen{
+        font-size: small;
+        margin-top: 4px;
+    }
+    
+    .cameraPicture{
+        height: 13px;
+        width: 18px;
+    
+    }
+    
+    .textCamera{
+        font-size: small;
+    }
+    
+    .workspace_smokeAlarm{
+        margin-top: 7px;
+    }
+    
+    .workspacePicture{
+        height: 13px;
+        width: 18px;
+        
+    }
+    
+    .textWorkspace{
+        font-size: small;
+    }
+    
+    .smokeAlarmPicture{
+        height: 13px;
+        width: 18px;
+        
+    }
+    
+    .textSmokeAlarm{
+        font-size: small;
+    }
+    
+    .wifi_firstKit{
+        margin-top: 7px;
+    }
+    
+    
+    .wifiPicture{
+        height: 13px;
+        width: 18px;
+        
+    }
+    
+    .textWifi{
+        font-size: small;
+    }
+    
+    
+    .firstKitPicture{
+        height: 13px;
+        width: 18px;
+        
+    }
+    
+    .textFirstKit{
+        font-size: small;
+    }
+    
+    .dryer_privateParking{
+        margin-top: 7px;
+    }
+    
+    
+    .dryerPicture{
+        height: 13px;
+        width: 18px;
+        
+    }
+    
+    .textDryer{
+        font-size: small;
+    }
+    
+    
+    .privateParkingPicture{
+        height: 13px;
+        width: 18px;
+        
+    }
+    
+    .textPrivateParking{
+        font-size: small;
+    }
+    
+    .climateControl_heating{
+        margin-top: 7px;
+    }
+    
+    
+    .climateControlPicture{
+        height: 13px;
+        width: 18px;
+        
+    }
+    
+    .textClimateControl{
+        font-size: small;
+    }
+    
+    
+    .heatingPicture{
+        height: 13px;
+        width: 18px;
+        
+    }
+    
+    .textHeating{
+        font-size: small;
+    }
+    
+    .interior{
+        text-align: center;
+    }
+    
+    .inputInterior{
+        width: 500px;
+        height: 50px;
+        margin-top: 20px;
+        border: none;
+        box-shadow: var(--box-shadow);
+        padding-left: 10px;
+        border-radius: 8px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    .security{
+        text-align: center;
+    }
+    
+    .inputSecurity{
+        width: 500px;
+        height: 50px;
+        margin-top: 20px;
+        border: none;
+        box-shadow: var(--box-shadow);
+        padding-left: 10px;
+        border-radius: 8px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    .cancellationCondition{
+        text-align: center;
+    }
+    
+    .cancellationConditionCreateApart{
+        width: 500px;
+        height: 170px;
+        margin-top: 15px;
+        border: none;
+        box-shadow: var(--box-shadow);
+        border-radius: 8px;
+        padding: 10px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    .buttonSaveCreateApart{
+        text-align: center;
+        margin-top: 13px;
+    }
+    
+    .buttonSave{
+        background-color: var(--primary-color);
+        box-shadow: var(--box-shadow);
+        border: none;
+        border-radius: 5px;
+        width: 220px;
+        height: 35px;
+        cursor: pointer;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+.appendEquipement {
+    position: absolute;
+    top: 700px;
+    left: 100px;
+}

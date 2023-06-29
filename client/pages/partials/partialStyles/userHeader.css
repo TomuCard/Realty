@@ -1,0 +1,50 @@
+.validate-message{
+    border: 1px solid green;
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+
+}
+
+.error-message{
+    border: 1px solid red;
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    z-index: 3;
+   
+}
+
+.message-bar{
+    border: 1px solid blue;
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+
+}
+
+.close-message{
+    align-self: flex-end;
+    color: red;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+}

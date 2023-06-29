@@ -1,0 +1,175 @@
+@import url('./var.css');
+@import url('./global.css');
+@import url('../pages/company/admin/stylesAdmin/styleAdminMenu.css');
+@import url('../pages/company/admin/stylesAdmin/styleAdminUser.css');
+@import url('../pages/company/admin/stylesAdmin/styleCreateApart.css');
+@import url('../pages/company/admin/stylesAdmin/styleUpdateApart.css');
+@import url('../pages/company/admin/stylesAdmin/styleUserSearch.css');
+@import url('../pages/company/admin/stylesAdmin/styleSelectUser.css');
+@import url('../pages/company/employee/styleEmployee/styleMenu.css');
+@import url('../pages/company/employee/styleEmployee/styleChecklist.css');
+@import url('../pages/company/employee/styleEmployee/styleDashboard.css');
+@import url('../pages/company/employee/styleEmployee/styleEmployeemessage.css');
+@import url('../pages/company/employee/styleEmployee/stylePlanning.css');
+@import url('../pages/company/employee/styleEmployee/styleReport.css');
+@import url('../pages/location/styleLocation/styleLocationDetails.css');
+@import url('../pages/location/styleLocation/styleLocations.css');
+@import url('../pages/location/styleLocation/stylePayment.css');
+@import url('../pages/userspace/styleUserSpace/styleLogin.css');
+@import url('../pages/userspace/styleUserSpace/styleHistoryLocation.css');
+@import url('../pages/userspace/styleUserSpace/stylebillings.css');
+@import url('../pages/userspace/styleUserSpace/styleMessage.css');
+@import url('../pages/userspace/styleUserSpace/comment.css');
+@import url('../pages/userspace/styleUserSpace/styleProfile.css');
+@import url('../pages/partials/partialStyles/navBarreProfile.css');
+@import url('../pages/partials/partialStyles/userHeader.css');
+@import url('../pages/company/employee/styleEmployee/menu.css');
+
+video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    opacity: 0;
+    animation: fade-in 3s ease-in-out forwards;
+  }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.welcomePageTitle {
+  font-size: 190px;
+  text-align: center;
+}
+
+.welcomePage {
+    background-color: black;
+}
+
+.welcomePageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  opacity: 0;
+  cursor: default;
+  color: white;
+  user-select: none;
+  animation: fade-in 3s ease-in-out forwards;
+}
+
+.subTitleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.welcomePageSubTitle {
+  font-size: 50px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.welcomePageLink {
+  display: inline-block;
+  font-size: 25px;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 15px 30px;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+@media (max-width: 992px) {
+  .welcomePage {
+    background-color: black;
+  }
+
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    opacity: 0;
+    animation: fade-in 3s ease-in-out forwards;
+  }
+
+  .welcomePageLink {
+    display: inline-block;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 15px 30px;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: background-color 2s;
+  }
+  
+  .welcomePageLink:hover {
+    background-color: #f5f5f5;
+  }
+
+  .subTitleContainer {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  .welcomePageSubTitle {
+    font-size: 40px;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+  
+  .welcomePageContainer {
+    opacity: 1;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .welcomePageTitle {
+    font-size: 150px;
+    padding-top: 150px;
+    margin-bottom: 30px;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .welcomePageTitle {
+    font-size: 80px;
+    padding-top: 100px;
+  }
+
+  .welcomePageSubTitle {
+    font-size: 20px;
+  }
+
+  .welcomePageLink {
+    font-size: 10px;
+    padding: 10px 0px;
+  }
+}

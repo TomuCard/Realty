@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*:before,
+*:after,
+html {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    background-color: #fff;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.global-userHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: #fff;
+    padding: 10px 90px;
+    box-shadow: var(--box-shadow);
+    z-index: 2;
+}
+
+.global-sider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 225px;
+    height: 100vh;
+}
+
+.global-buttonHref {
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    width: 200px;
+    height: 60px;
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.global-activeButton {
+    background-color: var(--primary-color);
+}
+
+.global-logoSider {
+    height: 70px;
+    margin: 20px 0px 80%;
+}
+
+.global-titleSider {
+    margin: 20px 0px 5%;
+}
+
+.global-imgApart {
+    width: 100%;
+    height: 100%;
+}
+
+.global-containerHrefSider {
+    width: 185px;
+
+}
+
+.global-sendContent {}
+
+.global-saveButton {
+    width: 30%;
+    padding: 10px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #000;
+    border-radius: 5px;
+    margin: auto;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+.global-saveButton:hover {
+    background-color: #D9B800;
+}
+
+.global-reserveButton {
+    border: none;
+    border-radius: 15px;
+    background-color: #000;
+    padding: 15px 0px;
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+.global-reserveButton:hover {
+    background-color: #777777
+}
+
+.global-icon {
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+}   
+
+.global-iconProfile {
+    width: 40px;
+    height: 40px;
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
+}
+
+.global-mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px 30px 0px 30px;
+}
+
+.global-locationContainer {
+    display: flex;
+    gap: 20px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    margin: 30px 90px 30px 90px;
+    padding: 30px;
+    text-decoration: none;
+    color: black;
+    box-shadow: var(--box-shadow);
+}
+
+.global-textposition {
+    display: grid;
+    row-gap: 90px;
+    margin-top: 0.4%;
+}
+
+.global-title {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.global-subtitle {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.global-imgLocation {
+    width: 30%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.global-buttonIcon {
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    box-shadow: var(--box-shadow);
+}
+
+.global-inputHeader {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.global-formHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    min-width: 230px;
+    padding: 5px 5px 5px 30px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: var(--box-shadow);
+}
+
+
+@media screen and (max-width: 580px) {
+    .global-userHeader {
+        padding: 10px 30px;
+    }
+}
+
+
+@media screen and (max-width: 1090px) {
+
+    .global-locationContainer {
+        display: flex;
+        gap: 10px;
+        margin: 30px auto;
+    }
+
+    .global-imgLocation {
+        width: 200px;
+        height: 170px;
+    }
+
+    .global-textposition {
+        row-gap: 20px;
+    }
+
+    .global-title {
+        font-weight: 600;
+        font-size: 16px;
+    }
+    
+    .global-subtitle {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .global-mainContainer {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 30px 0px 30px;
+    }
+
+    .global-description {
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (max-width: 590px) {
+    .global-locationContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .global-mainContainer {
+        align-content: center;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .global-description {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .global-formHeader {
+        width: 50%;
+        min-width: 100px;
+    }
+}
+
+.global-inputHeader:focus {
+    border: none;
+    box-shadow: none;
+    outline-offset: 0px;
+    outline: none;
+}
+
+.calandar-container {
+    width: 100%;
+    height: 30%;
+}
+
+.calandarNumberContainer {
+    margin-top: 15px;
+    height: 200px;
+}
+
+.calandarNumber {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.calandarWeekday {
+    
+}
+
+.calandarBtn {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #fff;
+    height: 40px;
+}
+
+.calandarCurrentMonth {
+    text-align: center;
+    width: 120px;
+    height: 50px;
+}
+
+.calandarCurrentMonth:first-letter {
+    text-transform: capitalize;
+}
+
+.slider {
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+}
+
+.slider::-webkit-scrollbar {
+    width: 0.5em;
+}
+  
+.slider::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+  
+.slider::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.global-containerCompany {
+    position: absolute;
+    top: 0;
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    border-radius: 50px 0px 0px 50px;
+    box-shadow: var(--box-shadow);
+    overflow: auto;
+    height: 100vh;
+}

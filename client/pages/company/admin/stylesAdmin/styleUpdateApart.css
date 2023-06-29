@@ -1,0 +1,237 @@
+.iconRealityUpdateApart{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+#preview {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+ }
+
+  #image-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    background-color: #c4c4c4;
+    margin: 10px auto 20px auto;
+    display: flex;
+    height: 30%;
+    width: 80%;
+    justify-content: center;
+    border-style: dashed;
+    border-color: #989898;
+    border-width: 5px;
+    background-repeat: no-repeat;
+    max-height: 300px;
+    min-width: 80%;
+    min-height: 180px;
+  }
+  
+.imageUpdateLocation{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 70vw;
+    height: 70vw;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+#file-input{
+    margin-top: 20px;
+    overflow: hidden;
+    display: none;
+}
+
+.buttonInput-FileUpdateApart{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.buttonInput-File{
+    background-color: var(--primary-color);
+    width: 180px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 20px;
+    background-color: #ffd800;
+}
+
+.buttonInput-File:hover{
+    background-color:#CCAD00;
+    cursor: pointer;
+}
+
+#textAddPicture{
+    text-align: center;
+    color: var(--text-color);
+}
+
+.containerUpdateApart{
+    display: flex;
+    flex-direction: column;
+    /* top: 0px; */
+}
+
+.blabla{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.formUpdateApart{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.updateComment{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 30px;
+}
+
+.moreComment{
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.containerComment{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px 0px;
+}
+
+.oneComment{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contentOneComment{
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    height: 15vh;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: start;
+}
+
+.buttonOneComment{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttonOneComment button{
+    margin-top: 10px;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.greenButtonOneComment{
+    background-color: #009E2F;
+}
+
+.redButtonOneComment{
+    background-color: #E52937;
+}
+
+.employeUpdateApart{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 15px 30px; */
+    padding: 10%;
+}
+
+.employeUpdateApart a{
+    border: none;
+    border-radius: 7px;
+    background-color: var(--primary-color);
+    padding: 5px 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+.containerPlanningUpdateApart{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.contentPlanningUpdateApart{
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    border-radius: 15px;
+    padding: 15px 30px;
+
+}
+
+.onePlanningUpdateApart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px 0px;
+}
+
+.onePlanningUpdateApart button{
+    border: none;
+    border-radius: 7px;
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.planningName{
+    margin-left: 30px;
+}
+
+/* ----------------------------------------------------------------------------- */
+.containerAddService{
+   display: flex;
+   justify-content: space-between;
+   padding: 1%;
+}
+.allServicesContainer{
+    margin: 2%;
+    width: 30%;
+    text-align: start;
+}
+.serviceSubTitle{
+    margin-bottom: 2%;
+}
+.allServicesOfApartment{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 1%;
+}
+
+.oneServiceOfApartment{
+    margin: 1%;
+}

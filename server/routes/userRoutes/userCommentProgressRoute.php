@@ -1,0 +1,71 @@
+<?php
+require_once './debug.php';
+// inclure les controllers nécessaires
+require_once './controllers/userControllers/userCommentProgressController.php';
+
+// Obtenir le chemin de l'URL demandée
+$url = $_SERVER['REQUEST_URI'];
+
+// Obtenir la méthode HTTP actuelle
+$method = $_SERVER['REQUEST_METHOD'];
+
+$matched = false;
+
+switch ($url) {
+    // Route utilisateur de l'API
+    // preg_mag est utiliser pour les routes en GET qui on un paramettre dans l'url
+    case preg_match('@^/comment/progress/getAll/(\d+)$@', $url, $matches) ? $url : '':
+        $controller = new Comment_progress();
+        if ($method == 'GET') {
+            $controller->getAllCommentProgressForOneApartment($matches[1]);
+            $matched = true;
+        } else {
+            header('HTTP/1.1 405 Method Not Allowed');
+            header('Allow: GET');
+        };
+        break;
+
+    case '/comment/progress/add':
+        $controller = new Comment_progress();
+        if ($method == 'POST') {
+            $controller->addCommentProgress();
+            $matched = true;
+        } else {
+            header('HTTP/1.1 405 Method Not Allowed');
+            header('Allow: POST');
+        };
+        break;
+
+    case preg_match('@^/comment/progress/validate/(\d+)$@', $url, $matches) ? $url : '':
+            $controller = new Comment_progress();
+            if ($method == 'GET') {
+                $controller->commentProgressValidate($matches[1]);
+                $matched = true;
+            } else {
+                header('HTTP/1.1 405 Method Not Allowed');
+                header('Allow: GET');
+            };
+            break;
+
+    case preg_match('@^/comment/progress/delete/(\d+)$@', $url, $matches) ? $url : '':
+            $controller = new Comment_progress();
+            if ($method == 'GET') {
+                $controller->commentProgressDelete($matches[1]);
+                $matched = true;
+            } else {
+                header('HTTP/1.1 405 Method Not Allowed');
+                header('Allow: GET');
+            };
+            break;
+
+    case preg_match('@^/notification/getAll/(\d+)$@', $url, $matches) ? $url : '':
+            $controller = new Comment_progress();
+            if ($method == 'GET') {
+                $controller->getAllNotificationForOneUser($matches[1]);
+                $matched = true;
+            } else {
+                header('HTTP/1.1 405 Method Not Allowed');
+                header('Allow: GET');
+            };
+            break;        
+}

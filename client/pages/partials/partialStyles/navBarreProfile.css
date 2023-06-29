@@ -1,0 +1,62 @@
+.search_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.search_label{
+    align-self: center;
+    font-weight: bold;
+}
+
+.search_input{
+    width: 300px;
+    padding: 5px;
+}
+
+.search_date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search_button{
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 10px 15px 10px 15px;
+    height: 50px;
+}
+
+.search_option{
+    margin: 0px 15px 0px 5px;
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 722px) {
+    .search_form {
+        display: grid;
+    }
+
+    .search_input{
+        width: 100px;
+        padding: 5px;
+    }
+
+    .realtyLogo {
+        left: 10px;
+    }
+    
+    .zipCode {
+        justify-content: left;
+        width: 200px;
+    }
+    .search_option {
+        display: none;
+    }
+}

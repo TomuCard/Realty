@@ -1,0 +1,114 @@
+.containerReport{
+    overflow: hidden;
+    height: 100vh;
+
+}
+
+.titleReport{
+    padding-left: 25px;
+    margin-bottom: 10px;
+    padding-top: 40px;
+    box-shadow: var(--box-shadow);
+    height: 110px;
+    width: auto;
+    border-top-left-radius: 55px;
+}
+
+.messagesReport{
+    text-align: end ;
+    margin-left: 60%;
+    overflow-y: scroll;
+    height: calc(100vh - 270px);
+}
+
+.messageReport{
+    text-align: start;
+    margin-top: 25px;
+    width: calc(100% - 35px);
+    padding: 15px;
+    right: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-weight: bold;
+}
+
+.greenReport{
+    background-color: #009E2F;
+}
+
+.redReport{
+    background-color: #E52937;
+}
+
+.sendMessageReport{
+    margin-left: 60px;
+    flex-wrap: nowrap;
+}
+
+.inputMessageReport{
+     border: none;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    font-size: 20px;
+    width: 93%; 
+}
+
+.buttonsReport{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+input[type="radio"].redButtonReport{
+    background-color: #E52937;
+}
+
+input[type="radio"].radioReport{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+input[type="radio"].radioReport:checked{
+    border: 5px solid #000;
+}
+
+input[type="radio"].greenButtonReport{
+    background-color: #009E2F;
+}
+
+.redButtonReport{
+    height: 45px;
+    width: 45px;
+    background-color: #E52937;
+    border: none;
+    margin-left: 35px;
+} 
+
+
+.greenButtonReport{
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    background-color: #009E2F;
+    border: none;
+    margin-left: 35px;
+}
+
+.buttonSendReport{
+    border: none;
+    background-color: black;
+    height: 45px;
+    width: 128px;
+    border-radius: 10px;
+    color: #fff;
+    margin-right: 35px;
+    cursor: pointer;
+}

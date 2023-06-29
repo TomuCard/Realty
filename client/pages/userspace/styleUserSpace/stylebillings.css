@@ -1,0 +1,40 @@
+.dateBillings {
+    display: flex;
+    align-items: center;
+}
+
+.contentBilling {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.containerDate {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.titleBillings {
+    width: 100%;
+    position: fixed;
+}
+
+.containerAllBillings {
+    overflow-y: scroll;
+    position: relative;
+    margin-top: 5%;
+    width: 900px;
+    height: 550px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.srollbillings {
+    height: 80px;
+}
+
+.contentBilling p {
+    width: 35%;
+}

@@ -1,0 +1,360 @@
+.bodyProfile {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #fff;
+    /* background: var(--primary-color) -webkit-linear-gradient(top, #ffd90025, #ffffff); */
+}
+
+.containerModifProfile {
+    overflow: hidden;
+    position: relative;
+    margin-top: 5%;
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    background: #fff;
+    /* box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22); */
+    box-shadow: var(--box-shadow);
+}
+
+.containerProfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+.profile {
+    perspective: 1000px;
+}
+
+.profile-card {
+    position: relative;
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    margin-top: 5%;
+}
+
+
+
+.frontProfile,
+.backProfile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.frontProfile {
+    transform: rotateY(0deg);
+    background-color: #f1f1f1;
+}
+
+.backProfile {
+    transform: rotateY(180deg);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    background-image: url(../../../images/RealtyIcon.svg);
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.nameProfile {
+    font-size: 24px;
+    margin-bottom: 0;
+    margin-left: 15%;
+}
+
+.titleProfile {
+    padding: 30px;
+    background-color: #fff;
+}
+
+.titleProfileBot {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
+    margin-left: 33%;
+}
+
+.detailsProfile {
+    text-align: left;
+}
+
+.detailsProfile .pProfile {
+    margin: 5px 0;
+}
+
+.profile-card.flipped {
+    transform: rotateY(180deg);
+}
+
+.profile-card.reverseflipped {
+    transform: rotateY(-180deg);
+    cursor: pointer;
+}
+
+.labelProfile {
+    display: block;
+    width: 260px;
+    margin: 25px auto 0;
+    text-align: center;
+}
+
+.labelProfile .spanProfile {
+    font-size: 14px;
+    font-weight: 600;
+    color: #505f75;
+    text-transform: uppercase;
+}
+
+.ticket {
+    position: absolute;
+    width: 687px;
+    height: 674px;
+    left: calc(50% - 687px/2 + 139.5px);
+    top: calc(50% - 674px/2 - 1px);
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+}
+
+.pProfile {
+    margin-left: 5%;
+}
+
+.navbarProfile {
+    background-color: #f1f1f1;
+    width: 200px;
+    padding: 20px;
+    margin-left: 5%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    /* box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22); */
+    box-shadow: var(--box-shadow);
+}
+
+.navbarProfile a {
+    display: block;
+    color: #000;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navbarProfile a:hover {
+    background-color: #ddd;
+}
+
+.navbarProfile .active {
+    background-color: var(--primary-color);
+    color: #000;
+    border-radius: 5px;
+}
+
+.wrapperProfile {
+    display: flex;
+}
+
+.wrapperProfile .static-txtProfile {
+    color: #000000;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.wrapperProfile .dynamic-txtsProfile {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-txtsProfile .liProfile {
+    list-style: none;
+    color: #000000;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 5s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dynamic-txtsProfile .liProfile .spanProfile {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+
+.dynamic-txts .liProfile .spanProfile::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #f1f1f1;
+    border-left: 2px solid #000000;
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+.containerinputProfile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+
+
+/* CHANGEMENT DE TOM  */
+
+
+
+
+.inputProfile {
+    /* display: block;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(109, 93, 93, 0.4);
+    text-align: center;
+    font-family: 'Nunito', sans-serif; */
+    width: auto;
+    width: calc(100% - 60px);
+    padding: 10px;
+    margin: 0px 30px;
+    border: rgba(127, 127, 127, 0.3) solid 1px;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+}
+
+.containerTwoInput {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.containerTwoInput input {
+    width: 50%;
+}
+
+.containerTwoInput input {
+    margin: 0px;
+}
+
+.containerAllProfile {
+    overflow-y: hidden;
+    position: relative;
+    margin-top: 5%;
+    width: 900px;
+    height: 550px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.label-before {
+	line-height: 20px;
+	font-size: 12px;
+	top: -10px;
+	background: #fff;
+	padding: 0 6px;
+	left: 9px;
+}
+
+.field {
+	position: relative;
+    width: 100%;
+}
+
+.field label {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    color: grey;
+    cursor: text;
+    transition: 0.15s;
+}
+
+.field input:focus + .field label,
+.field input:focus:valid + .field label {
+    left: 7px;
+    top: -8px;
+    font-size: 0.8em;
+    color: blue;
+    border: 2px solid white;
+    border-radius: 45px;
+    border-right: 3px solid white;
+    border-bottom: none;
+    border-top: none;
+    background: white;
+}
+
+.field input:valid + label {
+    left: 5px;
+    top: -7px;
+    font-size: 0.7em;
+    color: black;
+    
+    border: 2px solid white;
+    border-radius: 45px;
+    border-right: 3px solid white;
+    border-bottom: none;
+    border-top: none;
+    background: white;
+}
+    
+.field input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    /* background-color: pink; */
+    outline: none;
+    border-radius: 7px;
+    box-shadow: var(--box-shadow);
+    border: none;
+    border: rgba(127, 127, 127, 0.3) solid 1px;
+}
+
+input:focus {
+    border: 1px solid blue;
+}
